@@ -1,11 +1,21 @@
 # CFD-solver-MATLAB
-A 2D Navier-Stokes solver for unsteady,laminar, incompressible flows using finite-volume method and collocated grid arrangement.
+A 2D Navier-Stokes solver for unsteady,laminar, incompressible flows using finite-volume method and collocated grid arrangement coded in MATLAB
+
 Pressure-velocity coupling implemented using SIMPLE algorithm.
+
 Spatial discretization - Central differencing
+
 Temporal discretization - Implicit Crank-Nicholson
-Accepts all-tri mesh as well as all-quad mesh in ascii Ansys-Fluent mesh file format.
+
+Accepts all-tri mesh as well as all-quad mesh in 2D ASCII Ansys-Fluent mesh file format (.msh).
 
 Instructions:
+
+Run the file NS_solve.m file to run the solver.
+
+Set the boundary conditions using the files 'U.bc', 'V.bc', 'P.bc' 
+inside the folder named BC. Check the example boundary condition files.
+Currently supports fixed value and zero gradient boundary condition
 
 Parameters to set in the code:
 1) mesh_file : Mesh file location
@@ -22,6 +32,4 @@ Parameters to set in the code:
                       plot. Set it to 'T' to activate, 'F' to deactivate
 11) residuals : flag set to visualize residuals every time step
 
-Set the boundary conditions using the files 'U.bc', 'V.bc', 'P.bc' 
-inside the folder named BC. Check the example boundary condition files.
-Currently supports fixed value and zero gradient boundary condition
+
