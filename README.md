@@ -22,6 +22,8 @@
   9. T : Flow end time
   10. flowvis : Flag set to visualize flow field every time step as a quiver plot. Set it to 'T' to activate, 'F' to deactivate
   11. residuals : flag set to visualize residuals every time step
+  
+* Once the unsteady simulation is done, the results are available in the variables u,v,p at the cell centres x,y. Feel free to visualize the data however you choose
 
 ## References:
 * Error Analysis and Estimation for the Finite Volume Method with Applications to Fluid Flows - PhD thesis by Dr. Hrvoje Jasak (https://foam-extend.fsb.hr/wp-content/uploads/2016/12/Jasak_PhD_1996.pdf)
