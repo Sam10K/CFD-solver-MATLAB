@@ -8,7 +8,9 @@
 ## Instructions:
 
 * Run the file NS_solve.m file to run the solver.
+* Some example mesh files and their boundary condition files are provided. Try them out with the appropriate flow parameters.
 * Set the boundary conditions using the files 'U.bc', 'V.bc', 'P.bc' inside the folder named BC. Check the example boundary condition files. Currently supports fixed value and zero gradient boundary condition
+* Don't forget to change the below mentioned parameters according to each specififc case. Specifically change the Reynolds number (Re) and Length scale (L)
 
 * Parameters to set in the code:
   1. mesh_file : Mesh file location
