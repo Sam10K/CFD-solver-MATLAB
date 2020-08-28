@@ -48,7 +48,15 @@ disp('Reading mesh. Please wait ..........')
 
 [Elements,Boundaries,Nodes] = mshread(mesh_file);
 
-fprintf('Mesh reading complete. Mesh has a total of %d elements.\n',length(Nodes));
+fprintf('Mesh reading complete. Mesh has a total of %d elements.\nShowing the mesh in triangulated form......\nPress any key to continue......\n',length(Nodes));
+
+x = Elements.centroid(:,1);
+y = Elements.centroid(:,2);
+tri = delaunay([x,y]);
+triplot(tri,x,y)
+
+pause()
+close
 
 Properties = struct('mu',mu,'rho',rho,'nu',nu);
 
@@ -87,8 +95,6 @@ end
 disp('Boundary conditions succesfully read. Solver started ........')
 ustar = u; vstar = v;
 
-x = Elements.centroid(:,1);
-y = Elements.centroid(:,2);
 
 if residuals=='T'
     figure(1)
