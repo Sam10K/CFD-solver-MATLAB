@@ -11,7 +11,7 @@ a = Elements.faces;
 centroids = Elements.centroid;
 u_bound = Boundaries.u_bound;
 v_bound = Boundaries.v_bound;
-[ugrad,vgrad,~] = gradient_loop(Elements,Boundaries,u,v,p);
+[ugrad,vgrad,~] = gradient(Elements,Boundaries,u,v,p);
 
 
 j=1;

@@ -15,7 +15,7 @@ v_bound = Boundaries.v_bound;
 p_bound = Boundaries.p_bound;
 
 centroids = [Elements.centroid];
-[Ugrad,Vgrad,Pgrad] = gradient_loop(Elements,Boundaries,u,v,p);
+[Ugrad,Vgrad,Pgrad] = gradient(Elements,Boundaries,u,v,p);
 dpdx_p = Pgrad(:,1);
 dpdy_p = Pgrad(:,2);
 
