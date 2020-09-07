@@ -50,10 +50,7 @@ disp('Reading mesh. Please wait ..........')
 
 fprintf('Mesh reading complete. Mesh has a total of %d elements.\nShowing the mesh in triangulated form......\nPress any key to continue......\n',length(Nodes));
 
-x = Elements.centroid(:,1);
-y = Elements.centroid(:,2);
-tri = delaunay([x,y]);
-triplot(tri,x,y)
+patch('Vertices',[Nodes.x,Nodes.y],'Faces',[Elements.faces.nodes],'FaceColor','None')
 
 pause()
 close
