@@ -115,14 +115,16 @@ while t<=T
         
    end
    
+   [~,~,grad_p] = gradient(Elements,Boundaries,u,v,p);
+   [Boundaries] = boundary_conditions(Boundaries,u,v,p,BC);
+   conv_n = convection(Boundaries,Elements,u,v,p);
+   diff_n = diffusion(Boundaries,Elements,Properties,u,v,p);    
+       
+   
    % Pressure Outer iteration
    diff_outer=1;tol_outer=1e-5;iter_outer=0;
    while (diff_outer>tol_outer) && iter_outer<=50 
        
-       [~,~,grad_p] = gradient(Elements,Boundaries,u,v,p);
-       [Boundaries] = boundary_conditions(Boundaries,u,v,p,BC);
-       conv_n = convection(Boundaries,Elements,u,v,p);
-       diff_n = diffusion(Boundaries,Elements,Properties,u,v,p);    
        
        % Momentum inner iteration
        tol=1e-6;diff=1;iter=0;
