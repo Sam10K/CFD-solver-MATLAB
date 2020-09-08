@@ -50,7 +50,7 @@ disp('Reading mesh. Please wait ..........')
 
 fprintf('Mesh reading complete. Mesh has a total of %d elements.\nShowing the mesh in triangulated form......\nPress any key to continue......\n',length(Nodes));
 
-patch('Vertices',[Nodes.x,Nodes.y],'Faces',[Elements.faces.nodes],'FaceColor','None')
+patch('Vertices',[Nodes(:,1),Nodes(:,2)],'Faces',[Elements.faces.nodes],'FaceColor','None')
 
 pause()
 close
