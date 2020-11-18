@@ -2,8 +2,10 @@
 * A 2D Navier-Stokes solver for solving laminar, incompressible flows using finite-volume method and collocated grid arrangement coded in MATLAB
 * Capable of solving both steady state and unsteady problems
 * Pressure-velocity coupling implemented using SIMPLE algorithm
-* Spatial discretization - Available choices include Upwind, Central differencing, Second order upwind, QUICK and FROMM schemes
-* Temporal discretization - Implicit Crank-Nicholson
+* Spatial discretization for divergence schemes - Available choices include Upwind, Central differencing, Second order upwind, QUICK and FROMM schemes
+* Temporal discretization for unsteady simulation - Implicit Crank-Nicholson
+* Cell centred gradient algorithms : Available choices are Gauss cell-based, Gauss node-based and Least squares gradient scheme
+* Matrix solvers available : Gauss Siedel, Gauss Jacobi and Incomplete LU decomposition (Fell free to edit the code to implement MATLAB built-in solvers)
 * Accepts all-tri mesh as well as all-quad mesh in 2D ASCII Ansys-Fluent mesh file format (.msh)
 * You have the option to output the files in Tecplot binary file format
 
