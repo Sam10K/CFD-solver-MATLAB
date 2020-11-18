@@ -23,6 +23,9 @@
   * plot_quiver(u,v) - To visualize the flow field using a quiver plot
 * Feel free to use your own post-processing functions to visualize data
 
+## Acknowledgement
+* Thanks to Wen Long (https://www.cfd-online.com/Forums/tecplot/103860-mat2tecplot.html) for the MATLAB function mat2tecplot.m that is used to convert data to Tecplot binary format.
+
 ## References:
 * Error Analysis and Estimation for the Finite Volume Method with Applications to Fluid Flows - PhD thesis by Dr. Hrvoje Jasak (https://foam-extend.fsb.hr/wp-content/uploads/2016/12/Jasak_PhD_1996.pdf)
 
