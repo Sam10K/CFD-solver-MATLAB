@@ -21,8 +21,6 @@ Properties = struct('mu',Solver_params.mu,'rho',Solver_params.rho,'nu',Solver_pa
 
 BC = bc_read();
 
-disp('Testing Git');
-
 [u,v,p,Boundaries,Elements] = initialize(BC,Elements,Boundaries);
 
 if Solver_params.steady_flag == 'T'
