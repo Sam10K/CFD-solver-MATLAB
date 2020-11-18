@@ -1,0 +1,40 @@
+% div_scheme : SOU 	- Second order Upwind 
+%	       CD  	- Central Difference
+%	       UD  	- Upwind Difference
+%              FROMM    - FROMM Scheme
+%	       QUICK    - QUICK scheme
+
+% Cell-center grad_scheme : GC	- Gauss cell centred
+%			    GN	- Gauss nodal
+%			    LSQ - Least Squares gradient scheme
+
+% Matrix_solver : SOR	- Succesive over Relaxation (default operation is Gauss Siedel)
+%		  JAC   - Jacobi solver
+%		  ILU   - Incomplete LU decomposition
+
+div_scheme = SOU;
+
+grad_scheme = LSQ;
+
+u_matrix_solver = SOR
+{
+max_iter = 100;
+tol = 1e-6;
+nsweeps = 1;
+};
+
+v_matrix_solver = SOR
+{
+max_iter = 100;
+tol = 1e-6;
+nsweeps = 1;
+};
+
+p_matrix_solver = SOR
+{
+max_iter = 100;
+tol = 1e-6;
+nsweeps = 1;
+};
+
+
