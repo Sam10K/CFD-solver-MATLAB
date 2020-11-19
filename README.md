@@ -13,7 +13,7 @@
 
 * Run the file NS_solve.m file to run the solver.
 * Some example mesh files and their boundary condition files are provided.
-* Set the boundary conditions using the files 'U.bc', 'V.bc', 'P.bc' inside the folder named BC. Check the example boundary condition files. Currently supports fixed value, wall and zero gradient boundary condition
+* Set the boundary conditions using the files 'U.bc', 'V.bc', 'P.bc' inside the folder named BC. Check the example boundary condition files. Currently supports fixed value and zero gradient boundary conditions
 * You can edit the solver setup parameters using the file 'solver_setup' inside the solver_setup folder
 * Schemes and SIMPLE algorithm parameters can alo be edited using the files inside the solver_setup folder
   
