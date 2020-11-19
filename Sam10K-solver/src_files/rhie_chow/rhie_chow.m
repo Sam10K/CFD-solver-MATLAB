@@ -56,8 +56,8 @@ for i=1:nd
     uf = uf - 1./Ap_f(:,1) .* (del_p(:,1)-del_p_bar(:,1)) + (1-alpha_u)*(uf_dummy-uf);
     vf = vf - 1./Ap_f(:,2) .* (del_p(:,2)-del_p_bar(:,2)) + (1-alpha_u)*(vf_dummy-vf);
     
-%     uf(bd) = u_bound(neighb_bound(bd));
-%     vf(bd) = v_bound(neighb_bound(bd));
+    uf(bd) = u_bound(neighb_bound(bd));
+    vf(bd) = v_bound(neighb_bound(bd));
     
     Elements.faces.uf(:,i) = uf;
     Elements.faces.vf(:,i) = vf;
