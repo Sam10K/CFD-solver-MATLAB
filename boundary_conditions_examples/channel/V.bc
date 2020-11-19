@@ -22,13 +22,13 @@ ZONE-OUTLET
 
 ZONE-TOP
 {
-  type wall;
+  type fixed;
   value	0;
 }
 
 ZONE-BOTTOM
 {
-  type wall;
+  type fixed;
   value	0;
 }
 

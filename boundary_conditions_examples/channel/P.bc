@@ -22,12 +22,12 @@ ZONE-OUTLET
 
 ZONE-TOP
 {
-  type wall;
+  type zeroGradient;
   value	0;
 }
 
 ZONE-BOTTOM
 {
-  type wall;
+  type zeroGradient;
   value	0;
 }

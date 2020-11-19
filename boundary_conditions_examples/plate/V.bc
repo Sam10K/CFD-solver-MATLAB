@@ -28,7 +28,7 @@ ZONE-TOP
 
 ZONE-PLATE
 {
-  type wall;
+  type fixed;
   value	0;
 }
 

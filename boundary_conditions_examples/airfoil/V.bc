@@ -34,7 +34,7 @@ ZONE-BOTTOM
 
 ZONE-SQUARE
 {
-  type wall;
+  type fixed;
   value	0;
 }
 

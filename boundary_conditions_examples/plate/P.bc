@@ -28,6 +28,6 @@ ZONE-TOP
 
 ZONE-PLATE
 {
-  type wall;
+  type zeroGradient;
   value	0;
 }

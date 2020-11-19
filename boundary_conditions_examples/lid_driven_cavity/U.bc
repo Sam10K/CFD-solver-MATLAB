@@ -1,5 +1,5 @@
 % Boundary condition file %
-% Currently supports wall value and zero gradient boundary conditions%
+% Currently supports fixed value and zero gradient boundary conditions%
 % Requires type and value fields %
 
 internal field
@@ -10,24 +10,24 @@ internal field
 
 ZONE-LEFT
 {
-  type wall;
+  type fixed;
   value 0;
 }
 
 ZONE-RIGHT
 {
-  type wall;
+  type fixed;
   value	0;
 }
 
 ZONE-TOP
 {
-  type wall;
+  type fixed;
   value	0.06;
 }
 
 ZONE-BOTTOM
 {
-  type wall;
+  type fixed;
   value	0;
 }
